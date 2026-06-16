@@ -1,24 +1,20 @@
 # ArrowTracker
 
 - Small tracker plugin for Paper 1.21.4
-
 - What u get:
   - `/tracker <x> <z>` - start personal arrow
   - `/tracker clear` - stop it
   - Same coords again = toggle off
-
 - How its done:
   - Packet text display
   - Mounted on player
   - Points by player `x/z` vs target `x/z`
   - 1 active tracker per player
-
 - Req:
   - Paper 1.21.4
   - PacketEvents
   - resourcepack:
     - use ArrowTracker pack from repo/release
-
 - API:
   - public contract = `com.ratger.arrowtracker.api.*`
   - published artifact is thin api jar, not plugin runtime jar
@@ -32,7 +28,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("...")
+    compileOnly("com.github.FrustratedQuim:ArrowTracker:1.0.0")
 }
 ```
 
@@ -55,8 +51,7 @@ when (api.toggleTracker(player, TrackerTarget(128.5, -64.0))) {
   - `isTracking(playerId)` = current active state
   - `getTarget(playerId)` = current target or `null`
   - `getActiveTrackers()` = snapshot of active trackers
-
 - Note:
   - call ArrowTracker API only from main server thread
-  - exact JitPack coordinate depends on final repo/module layout, so check JitPack `Get it` page after first publish
+  - default JitPack coordinate = `com.github.FrustratedQuim:ArrowTracker:<Tag>`
   - `publicationGroupId` and `publicationArtifactId` can be overridden via Gradle properties before publish

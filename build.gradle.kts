@@ -8,7 +8,7 @@ group = "com.ratger.arrowtracker"
 version = "1.0.0"
 val pluginName = "ArrowTracker"
 val artifactBaseName = pluginName
-val publicationGroupId = providers.gradleProperty("publicationGroupId").orElse(project.group.toString())
+val publicationGroupId = providers.gradleProperty("publicationGroupId").orElse("com.github.FrustratedQuim")
 val publicationArtifactId = providers.gradleProperty("publicationArtifactId").orElse(pluginName)
 
 repositories {
