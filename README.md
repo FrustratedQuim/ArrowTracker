@@ -14,7 +14,7 @@
   - Paper 1.21.4
   - PacketEvents
   - resourcepack:
-    - use ArrowTracker pack from repo/release
+    - [ArrowTracker.zip](https://github.com/user-attachments/files/29009154/ArrowTracker.zip)
 - API:
   - public contract = `com.ratger.arrowtracker.api.*`
   - published artifact is thin api jar, not plugin runtime jar
