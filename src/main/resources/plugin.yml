@@ -1,0 +1,11 @@
+name: ${pluginName}
+version: ${version}
+main: com.ratger.arrowtracker.ArrowTrackerPlugin
+api-version: '1.21'
+authors: [ ratger ]
+description: Arrow tracking plugin for Paper 1.21.4
+depend: [ packetevents ]
+commands:
+  tracker:
+    description: Shows a personal tracker arrow for target coordinates
+    usage: /tracker <x> <z>
